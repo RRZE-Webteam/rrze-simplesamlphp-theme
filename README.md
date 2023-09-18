@@ -1,6 +1,6 @@
 # RRZE SimpleSAMLphp Theme
 
-Theme module for SimpleSAMLphp to be used together with the `rrze-sso` WP plugin.
+Theme module for SimpleSAMLphp v2.x to be used together with the `rrze-sso` WP plugin.
 
 ## Installation
 
