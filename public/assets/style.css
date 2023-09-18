@@ -1,0 +1,292 @@
+/* ----------------------------------------------------------------------------
+ * Simplesamlphp SP module for RRZE theme
+ * -------------------------------------------------------------------------- */
+#logo {
+    font-family: sans-serif;
+    font-size: 2.5em;
+    color: #000000;
+    text-shadow: none;
+}
+
+#menu {
+    background: #e6e6e6;
+}
+
+#menu a {
+    color: #777;
+}
+
+menu-heading {
+    background: #444;
+    color: #000;
+}
+
+a:hover,
+a:focus,
+a.pure-menu-link:hover,
+a.pure-menu-link:focus,
+.pure-menu-selected a.pure-menu-link:hover,
+.pure-menu-selected a.pure-menu-link:focus {
+    color: #fff;
+    background-color: #444;
+}
+
+#menu .pure-menu-selected,
+#menu .pure-menu-heading {
+    background: #444;
+    color: #fff;
+}
+
+.pure-button-red {
+    background-color: #444;
+    color: #fff;
+}
+
+.pure-button-red:hover,
+.pure-button-red:focus {
+    background-color: #777;
+    padding: 0.5em 1em;
+}
+
+#header {
+    background: none;
+    background-color: #e6e6e6;
+}
+
+#footer {
+    background: none;
+    background-color: #e6e6e6;
+    color: #000;
+}
+
+div.preferredidp {
+    padding: 1ex 2em;
+}
+
+/* ----------------------------------------------------------------------------
+ *   Forms
+ * -------------------------------------------------------------------------- */
+
+/* Include margin and padding in the width calculation of input and textarea. */
+input,
+select,
+textarea,
+button {
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+textarea,
+input {
+    font-size: 14px;
+}
+
+textarea {
+    overflow: auto;
+    padding: 2px 6px;
+    /* inherits font size 14px */
+    line-height: 1.42857143; /* 20px */
+    resize: vertical;
+}
+
+label {
+    cursor: pointer;
+}
+
+input,
+select {
+    margin: 0 1px;
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+    box-shadow: 0 0 0 transparent;
+    border-radius: 4px;
+    border: 1px solid #8c8f94;
+    background-color: #fff;
+    color: #2c3338;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 0 8px;
+    /* inherits font size 14px */
+    line-height: 2; /* 28px */
+    /* Only necessary for IE11 */
+    min-height: 30px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="checkbox"]:focus,
+input[type="radio"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+    /* Only visible in Windows High Contrast mode */
+    outline: 2px solid transparent;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+    background: #fff;
+    color: #50575e;
+    clear: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 0;
+    height: 1rem;
+    margin: -0.25rem 0.25rem 0 0;
+    outline: 0;
+    padding: 0 !important;
+    text-align: center;
+    vertical-align: middle;
+    width: 1rem;
+    min-width: 1rem;
+    -webkit-appearance: none;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: 0.05s border-color ease-in-out;
+}
+
+input[type="radio"]:checked + label:before {
+    color: #8c8f94;
+}
+
+input[type="radio"] {
+    border-radius: 50%;
+    margin-right: 0.25rem;
+    /* 10px not sure if still necessary, comes from the MP6 redesign in r26072 */
+    line-height: 0.71428571;
+}
+
+input[type="checkbox"]:checked::before,
+input[type="radio"]:checked::before {
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    width: 1rem;
+    speak: never;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+input[type="checkbox"]:checked::before {
+    /* Use the "Yes" SVG Dashicon */
+    content: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2020%2020%27%3E%3Cpath%20d%3D%27M14.83%204.89l1.34.94-5.81%208.38H9.02L5.78%209.67l1.34-1.25%202.57%202.4z%27%20fill%3D%27%233582c4%27%2F%3E%3C%2Fsvg%3E");
+    margin: -0.1875rem 0 0 -0.25rem;
+    height: 1.3125rem;
+    width: 1.3125rem;
+}
+
+input[type="radio"]:checked::before {
+    content: "";
+    border-radius: 50%;
+    width: 0.5rem; /* 8px */
+    height: 0.5rem; /* 8px */
+    margin: 0.1875rem; /* 3px */
+    background-color: #3582c4;
+    /* 16px not sure if still necessary, comes from the MP6 redesign in r26072 */
+    line-height: 1.14285714;
+}
+
+input.readonly,
+input[readonly],
+textarea.readonly,
+textarea[readonly] {
+    background-color: #f0f0f1;
+}
+
+::-webkit-input-placeholder {
+    color: #646970;
+}
+
+::-moz-placeholder {
+    color: #646970;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #646970;
+}
+
+input:disabled,
+input.disabled,
+select:disabled,
+select.disabled,
+textarea:disabled,
+textarea.disabled {
+    background: rgba(255, 255, 255, 0.5);
+    border-color: rgba(220, 220, 222, 0.75);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
+    color: rgba(44, 51, 56, 0.5);
+}
+
+input[type="checkbox"]:disabled,
+input[type="checkbox"].disabled,
+input[type="radio"]:disabled,
+input[type="radio"].disabled,
+input[type="checkbox"]:disabled:checked:before,
+input[type="checkbox"].disabled:checked:before,
+input[type="radio"]:disabled:checked:before,
+input[type="radio"].disabled:checked:before {
+    opacity: 0.7;
+}
+
+/* =Media Queries
+-------------------------------------------------------------- */
+
+@media screen and (max-width: 782px) {
+    /* Input Elements */
+    textarea {
+        -webkit-appearance: none;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        -webkit-appearance: none;
+        padding: 3px 10px;
+        /* Only necessary for IE11 */
+        min-height: 40px;
+    }
+
+    input[type="checkbox"] {
+        -webkit-appearance: none;
+    }
+
+    input[type="checkbox"]:checked:before {
+        width: 1.875rem;
+        height: 1.875rem;
+        margin: -0.1875rem -0.3125rem;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        height: 1.5625rem;
+        width: 1.5625rem;
+    }
+
+    .wp-admin p input[type="checkbox"],
+    .wp-admin p input[type="radio"] {
+        margin-top: -0.1875rem;
+    }
+
+    input[type="radio"]:checked:before {
+        vertical-align: middle;
+        width: 0.5625rem;
+        height: 0.5625rem;
+        margin: 0.4375rem;
+        line-height: 0.76190476;
+    }
+
+    textarea,
+    input {
+        font-size: 16px;
+    }
+}
