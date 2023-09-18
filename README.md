@@ -22,5 +22,7 @@ In order to use this module as theme you need to set in the `/path/to/simplesaml
     'rrze' => true,
 ],
 ...
+'theme.header' => $_SERVER['HTTP_HOST'],
+...
 'theme.use' => 'rrze:wordpress'
 ```
