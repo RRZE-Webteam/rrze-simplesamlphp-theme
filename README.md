@@ -17,5 +17,10 @@ git clone https://github.com/RRZE-Webteam/rrze-simplesamlphp-theme.git rrze
 In order to use this module as theme you need to set in the `/path/to/simplesamlphp/config/config.php`:
 
 ```text
+'module.enable' => [
+    ...
+    'rrze' => true,
+],
+...
 'theme.use' => 'rrze:wordpress'
 ```
