@@ -18,5 +18,4 @@ In order to use this module as theme you need to set in the `/path/to/simplesaml
 
 ```text
 'theme.use' => 'rrze:wordpress'
-'theme.controller' => '\SimpleSAML\Module\rrze\WordPressController'
 ```
